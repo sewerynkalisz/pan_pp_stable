@@ -1,8 +1,10 @@
-mmcv==0.2.12
-torch==1.1.0
+numpy==1.19.5
+mmcv
+torch
 editdistance
-Polygon3
 pyclipper
-opencv-python==3.4.2.17
 Cython
-torchvision==0.3
+torchvision
+scipy
+matplotlib
+Polygon3
