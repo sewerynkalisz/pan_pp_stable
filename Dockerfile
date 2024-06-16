@@ -9,7 +9,7 @@ ENV \
 RUN apt-get -yqq update \
     && pip install pip --upgrade 
 
-RUN apt-get update && apt-get -y install gcc g++ libgl1-mesa-glx libglib2.0-0 libsm6 libxrender1 libxext6
+RUN apt-get update && apt-get -y install gcc g++ libgl1-mesa-glx libglib2.0-0 libsm6 libxrender1 libxext6 build-essential
 
 
 COPY requirement.txt /tmp/

@@ -7,3 +7,4 @@ from .tt import TTLoader
 from .ctw import CTWLoader
 from .ctwv2 import CTWv2Loader
 from .msra import MSRALoader
+from .custom_dataset import CustomIC15Loader

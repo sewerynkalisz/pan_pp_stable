@@ -1,0 +1,1 @@
+nohup python train_custom.py --arch resnet18 --img_size 736 --short_size 736 --batch 32 > custom_train.out &

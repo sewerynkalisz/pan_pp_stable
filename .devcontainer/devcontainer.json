@@ -9,22 +9,45 @@
 		"dockerfile": "../Dockerfile"
 	},
 	"runArgs": [
-		"--gpus", "all",
-		"--shm-size=100gb"
-	]
-
+		"--gpus",
+		"all",
+		"--shm-size=200gb"
+	],
+	"mounts": [
+		{
+			"source": "/home/sewerynk/datasets/output_final",
+			"target": "/workspaces/pan_pp_stable/data/final_dataset",
+			"type": "bind"
+		}
+	],
+	"customizations": {
+		"vscode":{
+			"extensions": [
+				"ms-python.python",
+				"himanoa.python-autopep8",		
+				"ms-python.vscode-pylance",
+		
+				"tyriar.sort-lines",
+				"mechatroner.rainbow-csv",
+				"aaron-bond.better-comments",
+		
+				"ms-azuretools.vscode-docker",
+				"mutantdino.resourcemonitor",
+				"njpwerner.autodocstring",
+				"xpo.local-history",
+				"ms-toolsai.jupyter",
+				"git.path"
+			]
+		}
+	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "cat /etc/os-release",
-
 	// Configure tool-specific properties.
 	// "customizations": {},
-
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
 }
