@@ -32,7 +32,7 @@ def train(args, train_loader, model, optimizer, epoch, start_iter):
         'optimizer': optimizer.state_dict()},
         checkpoint=args.checkpoint,
         filename='checkpoint.pth.tar')
-    exit()
+    #exit()
 
     batch_time = AverageMeter(max_len=500)
     data_time = AverageMeter(max_len=500)
